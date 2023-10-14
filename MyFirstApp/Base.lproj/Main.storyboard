@@ -203,15 +203,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-W6-Uzw">
                                 <rect key="frame" x="0.0" y="103" width="430" height="795"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-3" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-je-fPk">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEV-Lk-UT7" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="265"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-2" translatesAutoresizingMaskIntoConstraints="NO" id="5qK-JT-TlU">
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoX-A6-DWu" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="265" width="430" height="265"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-4" translatesAutoresizingMaskIntoConstraints="NO" id="kKM-Yo-fgg">
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztY-eG-5Cg" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="530" width="430" height="265"/>
-                                    </imageView>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -234,9 +237,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstImageView" destination="bUa-je-fPk" id="4Wd-IW-5Ad"/>
-                        <outlet property="secondImageView" destination="5qK-JT-TlU" id="7We-Af-bE9"/>
-                        <outlet property="thirdImageView" destination="kKM-Yo-fgg" id="F3b-M8-aKN"/>
+                        <outlet property="firstCaptionImage" destination="mEV-Lk-UT7" id="lyo-4H-9k4"/>
+                        <outlet property="secondCaptionImage" destination="SoX-A6-DWu" id="wIx-pL-RhF"/>
+                        <outlet property="thirdcaptionImage" destination="ztY-eG-5Cg" id="SP5-3P-Uee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofA-la-ghd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -313,9 +316,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="images-2" width="287" height="175"/>
-        <image name="images-3" width="275" height="183"/>
-        <image name="images-4" width="360" height="140"/>
         <image name="square.and.arrow.up.on.square.fill" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -324,16 +324,16 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
